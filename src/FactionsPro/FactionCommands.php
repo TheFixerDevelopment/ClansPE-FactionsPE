@@ -452,7 +452,7 @@ class FactionCommands {
 							return true;
                         } 
                         if($args[1] == 5){
-                            $sender->sendMessage(TextFormat::GOLD . "FactionsPro Help Page 5 of 6" . TextFormat::RED . "\n/f membersof <faction>\n/f officersof <faction>\n/f leaderof <faction>\n/f say <send message to everyone in your faction>\n/f pf <player>\n/f topfactions");
+                            $sender->sendMessage(TextFormat::GOLD . "FactionsPro Help Page 5 of 6" . TextFormat::RED . "\n/f membersof <faction>\n/f officersof <faction>\n/f leaderof <faction>\n/f say <send message to everyone in your faction>\n/f pf <player>\n/f top");
 							return true;
                         }
                         else {
@@ -522,7 +522,7 @@ class FactionCommands {
                         $power = $this->plugin->getFactionPower($fac);
                         $sender->sendMessage($this->plugin->formatMessage("This plot is claimed by $fac with $power STR"));
                     }
-                    if(strtolower($args[0]) == 'topfactions'){
+                    if(strtolower($args[0]) == 'top'){
                         $this->plugin->sendListOfTop10FactionsTo($sender);
                     }
                     if(strtolower($args[0]) == 'forcedelete') {
