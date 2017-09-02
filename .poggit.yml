@@ -1,6 +1,6 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/ZPlayzMCPE/ZapFactionsPro
 branches:
-- patch-4
+- pmmpalpha7+
 projects:
   FactionsPro:
     path: ""
