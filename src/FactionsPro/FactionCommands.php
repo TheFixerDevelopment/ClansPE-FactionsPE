@@ -40,7 +40,7 @@ class FactionCommands {
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args) : bool{
 		if($sender instanceof Player) {
 			$player = $sender->getPlayer()->getName();
-			if(strtolower($command->getName('f'))) {
+			if(strtolower($command->getName()) === 'f') {
 				if(empty($args)) {
 					$sender->sendMessage($this->plugin->formatMessage("§7Please use: §e/f help §6for a list of Faction commands"));
 					return true;
